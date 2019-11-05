@@ -71,4 +71,46 @@ for i in range(len(p)):
 	q.append(p[(i-U)%len(p)])
 return q
 
-s
+4.Inaccurate robot motion
+probability showing that the robot motion can be inaccurate slightly showing the probability 
+for going off is less (say)0.1 and for it to be correct is 0.8
+this needs to be incorporated for a real world simulation as error occurs.
+
+#Modify the move function to accommodate the added 
+#probabilities of overshooting or undershooting 
+#the intended destination.
+
+p=[0, 1, 0, 0, 0]
+world=['green', 'red', 'red', 'green', 'green']
+measurements = ['red', 'green']
+pHit = 0.6
+pMiss = 0.2
+pExact = 0.8
+pOvershoot = 0.1
+pUndershoot = 0.1
+
+def sense(p, Z):
+    q=[]
+    for i in range(len(p)):
+        hit = (Z == world[i])
+        q.append(p[i] * (hit * pHit + (1-hit) * pMiss))
+    s = sum(q)
+    for i in range(len(q)):
+        q[i] = q[i] / s
+    return q
+
+def move(p, U):
+    q = []
+    r=[]
+    s=[]
+    t=[]
+    for i in range(len(p)):
+        r.append(p[(i-U)%len(p)]*pExact)
+        s.append(p[(i-U-1)%len(p)]*pOvershoot)
+        t.append(p[(i-U+1)%len(p)]*pUndershoot)
+        q.append(r[i]+s[i]+t[i])
+    return q
+    
+
+print move(p, 1)
+
