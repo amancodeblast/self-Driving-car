@@ -47,4 +47,28 @@ def sense(p, Z):
 #
 print p
 
-3.
+3.Exact motion-the world is cyclic and the posterior probability 
+shifts to the right if the robots moves towards right.We have a 
+perfect robot and we shift the prob with robot motion.
+4.
+#code the exact-motion for the move funcion.
+#here u is the number of steps in the right direction 
+#as p[U:]+p[:U] gives a left shift then the value of -U
+#will give the right shift list
+def move(p, U):
+    #
+    #ADD CODE HERE
+    q=[]
+    U=-(U%len(p))
+    q[:]=p[U:]+p[:U]
+    #
+    return q
+
+print move(p, 1)
+OR Alternatively you could just build a function 
+q=[]
+for i in range(len(p)):
+	q.append(p[(i-U)%len(p)])
+return q
+
+s
