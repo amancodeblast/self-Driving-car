@@ -125,4 +125,16 @@ def move(p, U):
         q.append(s)
     return q
     
+Limit distribution is the probability distribution we will reach after 
+we move more than sufficient amount of time
+Lets move twice
+#
+# ADD CODE HERE
+#
+print(move(move(p,1),1))
+# Make sure to print out p!
 
+Now lets move 1000 times
+for i in range(1000):
+    p=move(p,1)
+print p
