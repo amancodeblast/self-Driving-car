@@ -5,10 +5,11 @@
 # belief function.
 
 def update(mean1, var1, mean2, var2):
+    
     #from here
-	new_mean =(mean1*var2+mean2*var1)/(var1+var2)
+    new_mean =(mean1*var2+mean2*var1)/(var1+var2)
     new_var =1/((1/var2)+(1/var1))
     return [new_mean, new_var]
-	#till here
+    #till here
 
-print update(10.,8.,13., 2.)
+print (update(10.,8.,13., 2.))
