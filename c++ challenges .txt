@@ -1,0 +1,9 @@
+#include <iostream>
+
+int main()
+{
+    // write your code here!
+    // print "no more steering wheels" to stdout
+	stdout::
+    return 0;
+}
