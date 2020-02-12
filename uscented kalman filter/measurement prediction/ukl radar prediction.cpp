@@ -67,13 +67,48 @@ void UKF::PredictRadarMeasurement(VectorXd* z_out, MatrixXd* S_out) {
   
   //measurement covariance matrix S
   MatrixXd S = MatrixXd(n_z,n_z);
+  MatrixXd R = MatrixXd(n_z,n_z);
+  
 
 /*******************************************************************************
  * Student part begin
  ******************************************************************************/
+  R.fill(0.0);
+  R(0,0)=std_radr*std_radr;
+  R(1,1)=std_radphi*std_radphi;
+  R(2,2)=std_radrd*std_radrd;
+  for(int i=0;i<2*n_aug+1;i++){
+  double roh=Xsig_pred(0,i)*Xsig_pred(0,i)+Xsig_pred(1,i)*Xsig_pred(1,i);
+  double sie=atan(Xsig_pred(0,i)/Xsig_pred(1,i));
+  double roh_dot=(Xsig_pred(0,i)*Xsig_pred(2,i)*cos(3,i)+Xsig_pred(1,i)*Xsig_pred(2,i)*sin(3,i))/sqrt(Xsig_pred(2,i)*Xsig_pred(0,i)+Xsig_pred(1,i)*Xsig_pred(1,i));
+  Zsig(0,i)=roh;
+  Zsig(1,i)=sie;
+  Zsig(2,i)=roh_dot;
+  }
+  z_pred=Zsig*weights;
+  /* or u could do the above line like this 
+  for(int i=0;i<2*n_aug+1;i++){
+  z_pred=z_pred(i)weights(i)*Zsig.col(i);
+  }
 
+
+
+  */
   //transform sigma points into measurement space
+ 
   //calculate mean predicted measurement
+
+  while (z_diff>M_PI) z_diff+=2*M_PI;
+  while (z_diff<M_PI) z_diff-=2*M_PI;
+  }
+  for(int i=0;i<2*n_aug+1;i++){
+    VectorXd z_diff=(Zsig.col(i)-z_pred)
+    S=S+weights(i)*(z_diff*z_diff.transpose())
+
+ 
+  }
+  S=S+R
+  
   //calculate innovation covariance matrix S
 
   
