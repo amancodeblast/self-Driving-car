@@ -42,7 +42,13 @@ std::vector<float> initialize_priors(int map_size, std::vector<float> landmark_p
     std::vector<float> priors(map_size, 0.0);
     
     //YOUR CODE HERE
-    
-
+    int a=landmark_positions.size()*(position_stdev*2+1);
+    int n=1/a;
+    for(int i=0;i<landmark_positions.size();i++){
+    	int centre=landmark_positions[i];
+    	priors[centre]=n;
+    	priors[centre+1]=n;
+    	priors[centre-1]=n;	
+    	}
     return priors;
 }

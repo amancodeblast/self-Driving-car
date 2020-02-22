@@ -52,7 +52,7 @@ double sum;
 /*******************************************************************************
  * Student part begin
  ******************************************************************************/
-for(int i=0;i<n_x;i++){
+for(int i=0;i<2*n_aug+1;i++){
   if(i==0){
 weights(i)=lambda/(lambda+n_aug)
 }
@@ -61,7 +61,7 @@ weights(i)=lambda/(lambda+n_aug)/2;
 }
 
 x(i)=x(i)+weights*Xsig_pred(i);
-P(i)=weights(i)*((Xsig_pred(i)-x(i))*(Xsig_pred(i)-x(i).transpose()));
+P(i)=weights(i)*((Xsig_pred(i)-x)*((Xsig_pred(i)-x).transpose()));
 
 
 }
@@ -75,7 +75,38 @@ P(i)=weights(i)*((Xsig_pred(i)-x(i))*(Xsig_pred(i)-x(i).transpose()));
 /*******************************************************************************
  * Student part end
  ******************************************************************************/
- 
+  // set weights
+  double weight_0 = lambda/(lambda+n_aug);
+  weights(0) = weight_0;
+  for (int i=1; i<2*n_aug+1; i++) {  //2n+1 weights
+    double weight = 0.5/(n_aug+lambda);
+    weights(i) = weight;
+  }
+
+  //predicted state mean
+  x.fill(0.0);
+  for (int i = 0; i < 2 * n_aug + 1; i++) {  //iterate over sigma points
+    x = x+ weights(i) * Xsig_pred.col(i);
+  }
+//or the above smae thing can be done this way 
+  /*
+x=Xsig_pred.transpose()*weights;
+//because vector is a column i.e n_x X 1;
+
+  */
+  //predicted state covariance matrix
+  P.fill(0.0);
+  for (int i = 0; i < 2 * n_aug + 1; i++) {  //iterate over sigma points
+
+    // state difference
+    VectorXd x_diff = Xsig_pred.col(i) - x;
+    //angle normalization
+    while (x_diff(3)> M_PI) x_diff(3)-=2.*M_PI;
+    while (x_diff(3)<-M_PI) x_diff(3)+=2.*M_PI;
+
+    P = P + weights(i) * x_diff * x_diff.transpose() ;
+  }
+
 
 
 
