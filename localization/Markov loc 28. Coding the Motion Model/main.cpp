@@ -55,6 +55,16 @@ float motion_model(float pseudo_position, float movement, std::vector<float> pri
     float position_prob = 0.0f;
     
     //YOUR CODE HERE
+    for(int i=0;i<map_size;i++){
+        distance=pseudo_position-float(i);
+        //transitional probabilities
+        float trans_prob=help_functions::normpdf(distance,movement,control_stdev);
+        //estimate probability for the motion model 
+        position_prob+=trans_prob*prior[i];
+    }
+    float a=help_fuctions::normpdf(value,parameter,control_stdev);
+    float b=help_fuctions::normpdf(value,parameter,position_stdev);
+    float c=a*
 
     
     return position_prob;
