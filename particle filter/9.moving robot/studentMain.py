@@ -128,9 +128,15 @@ for i in range(N):
 p = p2
 
 w = []
-#insert code here!
 for i in range(N):
-    w.append(p.measurement_prob(Z))
-print(w) #Please print w for grading purposes.
+    w.append(p[i].measurement_prob(Z))
+
+
+#### DON'T MODIFY ANYTHING ABOVE HERE! ENTER CODE BELOW ####
+# You should make sure that p3 contains a list with particles
+# resampled according to their weights.
+# Also, DO NOT MODIFY p.
+
+p3 = []
 
 
