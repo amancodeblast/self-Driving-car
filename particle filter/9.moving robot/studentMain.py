@@ -122,3 +122,14 @@ print(myrobot.sense())
 myrobot.move(-pi/2,10)
 print(myrobot.sense())
 
+###############
+####   DON'T MODIFY ANYTHING ABOVE HERE! ENTER CODE BELOW ####
+
+N = 1000
+p = []
+
+#enter code here
+for i in range(N):
+    x=robot()
+    p.append(x)
+print(len(p))
