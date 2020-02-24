@@ -132,4 +132,9 @@ p = []
 for i in range(N):
     x=robot()
     p.append(x)
+    
 print(len(p))
+p2=[]
+for i in range():
+    p2.append(p[i].move(0.1,5))
+    
