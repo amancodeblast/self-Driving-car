@@ -110,31 +110,27 @@ def eval(r, p):
         sum += err
     return sum / float(len(p))
 
-
-
 ####   DON'T MODIFY ANYTHING ABOVE HERE! ENTER CODE BELOW ####
-myrobot=robot()
-myrobot.set_noise(5.0,0.1,5.0)
-myrobot.set(30,30,pi/2)
-myrobot.move(-pi/2,15)
-print(myrobot)
-print(myrobot.sense())
-myrobot.move(-pi/2,10)
-print(myrobot.sense())
-
-###############
-####   DON'T MODIFY ANYTHING ABOVE HERE! ENTER CODE BELOW ####
+myrobot = robot()
+myrobot = myrobot.move(0.1, 5.0)
+Z = myrobot.sense()
 
 N = 1000
 p = []
-
-#enter code here
 for i in range(N):
-    x=robot()
+    x = robot()
+    x.set_noise(0.05, 0.05, 5.0)#for measurement_probability so that it does divide by zero
     p.append(x)
-    
-print(len(p))
-p2=[]
-for i in range():
-    p2.append(p[i].move(0.1,5))
-    
+
+p2 = []
+for i in range(N):
+    p2.append(p[i].move(0.1, 5.0))
+p = p2
+
+w = []
+#insert code here!
+for i in range(N):
+    w.append(p.measurement_prob(Z))
+print(w) #Please print w for grading purposes.
+
+
