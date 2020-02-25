@@ -138,5 +138,15 @@ for i in range(N):
 # Also, DO NOT MODIFY p.
 
 p3 = []
+index=random.random(N)
+b=0.0
 
+mw=max(w)
+for i in range(N):
+    b+=random.random*2*mw
+    while b>w[index]:
+        beta-=index
+        index=index+1)%N
+    p3.append(p[index])
+p=p3
 
