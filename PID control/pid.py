@@ -111,6 +111,16 @@ def run(robot, tau_p, tau_d, tau_i, n=100, speed=1.0):
     x_trajectory = []
     y_trajectory = []
     # TODO: your code here
+    cteI=0
+    ctep=robot.y
+    for i in range(n):
+        cte=robot.y
+        steer=tau_p*ctep+tau_d*(cte-ctep)+tau_i*cteI
+        robot.run(steer,)
+        cteI+=cte
+        crep=cte
+        x_trajectory.append(robot.x)
+        y_trajectory.append(robot.y)
     return x_trajectory, y_trajectory
 
 
