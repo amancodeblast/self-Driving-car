@@ -116,7 +116,7 @@ def run(robot, tau_p, tau_d, tau_i, n=100, speed=1.0):
     for i in range(n):
         cte=robot.y
         steer=tau_p*ctep+tau_d*(cte-ctep)+tau_i*cteI
-        robot.run(steer,)
+        robot.run(steer,speed)
         cteI+=cte
         crep=cte
         x_trajectory.append(robot.x)
