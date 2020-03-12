@@ -9,7 +9,7 @@ grid=[[0,0,1,0,0,0],
       [0,0,0,0,1,0]]
 
 init =[0,0]
-g=1
+g=0
 goal=[len(grid)-1,len(grid[0])-1]
 delta=[[-1,0],
        [0,-1],
@@ -47,7 +47,7 @@ def search():
                 for i in range(len(delta_name)):
                     x1=x+delta[i][0]
                     y2=y+delat[i][1]
-                    g2=g+next[0]
+                    g2=g+1
                     if x1>=0 and x1< len(grid)and y2 >= 0 and y2 < len(grid[0]):
                         if closed[x1][y2]==0 and grid[x1][y2]==0:
                             open.append([g2,x1,y1])
