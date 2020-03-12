@@ -59,6 +59,7 @@ def search():
                             g2=g+cost
                             open.append([g2,x1,y2])
                             closed[x1][y2]=1
-                            
-    
+####12.expansion grid question                             
+    for i in range(len(expand)):
+        print(expand[i])
 search()
