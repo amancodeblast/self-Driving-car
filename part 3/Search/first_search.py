@@ -21,7 +21,9 @@ cost=1
 
  
 def search():
-    closed=[[0 for row in range(len(grid[0]))]for col in range(len(grid))]
+    closed=[[0 for row in range(len(grid[0]))]for col in range(len(grid))]# dont know why
+    #such order for i and j is chosen as grid[0] and grid....it should be the reverse
+
     closed[init[0]][init[1]]=1
     x=init[0]
     y=init[1]
