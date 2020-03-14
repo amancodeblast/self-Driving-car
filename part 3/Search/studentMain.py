@@ -41,6 +41,8 @@ def search(grid,init,goal,cost):
     closed = [[0 for row in range(len(grid[0]))] for col in range(len(grid))]
     closed[init[0]][init[1]] = 1
     expand=[['' for row in range(len(grid[0]))]for col in range(len(grid))]
+    rem=[['' for row in range(len(grid[0]))]for col in range(len(grid))]
+    expand[len(grid)][len(grid[0])]='*'
     x = init[0]
     y = init[1]
     g = 0
@@ -74,6 +76,13 @@ def search(grid,init,goal,cost):
                             expand[x][y]=delta_name[i]
                             open.append([g2, x2, y2])
                             closed[x2][y2] = 1
-
+                            rem[x][y] = i
+#    x0=len(grid)
+ #   y0=len(grid(0))
+  #  while x0>00 and y0>=0:
+   #     rem[][]=
+        
     return expand # make sure you return the shortest path
-print(search(grid,init,goal,cost))
+p=search(grid,init,goal,cost)
+for i in range(len(p)):
+    print("{}\n",format(p[i]))
