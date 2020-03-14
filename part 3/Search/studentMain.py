@@ -73,17 +73,19 @@ def search(grid,init,goal,cost):
                     if x2 >= 0 and x2 < len(grid) and y2 >=0 and y2 < len(grid[0]):
                         if closed[x2][y2] == 0 and grid[x2][y2] == 0:
                             g2 = g + cost
-                            expand[x][y]=delta_name[i]
+                            
                             open.append([g2, x2, y2])
                             closed[x2][y2] = 1
-                            rem[x][y] = i
-    x0=len(grid)
-    y0=len(grid[0])
+                            rem[x2][y2] = i
+    x0=goal[0]
+    y0=goal[1]
     while x0>00 and y0>=0:
-        temp=rem[x0-1][y0-1]-2
+        temp=rem[x0][y0]
         x3=x0-delta[temp][0]
         y3=y0-delta[temp][1]
         expand[x3][y3]=delta_name[temp]
+        x0=x3
+        y0=y3
         
     return expand # make sure you return the shortest path
 p=search(grid,init,goal,cost)
