@@ -43,13 +43,13 @@ def compute_value(grid,goal,cost):
                     for a in range(len(delta)):
                         x1=x+delta[a][0]
                         y1=y+delta[a][1]
-                        if x1>=0 and x1<len(grid)-1 and y1>=0 and y1<len(grid[0])-1:
-                            if grid[x1][y1]==0:
-                                v2=value[x1][y1]+cost
+                        if x1>=0 and x1<len(grid) and y1>=0 and y1<len(grid[0])and  grid[x1][y1]==0:
+                        
+                            v2=value[x1][y1]+cost
 
-                                if v2<value[x][y]:
-                                    value[x][y]=v2
-                                    change=True
+                            if v2<value[x][y]:
+                                value[x][y]=v2
+                                change=True
                                     
                                     
                             
