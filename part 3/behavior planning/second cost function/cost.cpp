@@ -13,6 +13,7 @@ float inefficiency_cost(int target_speed, int intended_lane, int final_lane, vec
     
     //TODO: Replace cost = 0 with an appropriate cost function.
     float cost = 0;
-    
+    cost= (2*target_speed-(lane_speed[intended_lane]+lane_speed[final_lane]))/target_speed;
+
     return cost;
 }
