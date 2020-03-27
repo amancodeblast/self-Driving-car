@@ -3,7 +3,7 @@ import oldtensorflow as tf
 
 def mean_iou(ground_truth, prediction, num_classes):
     # TODO: Use `tf.metrics.mean_iou` to compute the mean IoU.
-    iou, iou_op = None
+    iou, iou_op = tf.metrics.mean_iou(ground_truth, prediction, num_classes)
     return iou, iou_op
 
 
@@ -19,7 +19,7 @@ prediction = tf.constant([
     [3, 3, 0, 3]], dtype=tf.float32)
     
 # TODO: use `mean_iou` to compute the mean IoU
-iou, iou_op = mean_iou()
+iou, iou_op = mean_iou(ground_truth, prediction, 4)
 
 with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
@@ -29,3 +29,4 @@ with tf.Session() as sess:
         sess.run(iou_op)
         # should be 0.53869
         print("Mean IoU =", sess.run(iou))
+s
