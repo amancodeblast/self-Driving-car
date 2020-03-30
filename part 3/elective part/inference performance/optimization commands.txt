@@ -1,0 +1,12 @@
+~/tensorflow/bazel-bin/tensorflow/python/tools/optimize_for_inference \
+--input=frozen_graph.pb \
+--output=optimized_graph.pb \
+--frozen_graph=True \
+--input_names=image_input \
+--output_names=Softmax
+
+
+from graph_utils import load_graph
+
+sess, optimized_ops = load_graph('optimized_graph.pb')
+print(len(optimized_ops)) # 200
