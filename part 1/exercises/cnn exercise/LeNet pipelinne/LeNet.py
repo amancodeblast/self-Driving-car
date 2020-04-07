@@ -89,6 +89,10 @@ accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
 
 # Initializing the variables
 init = tf. global_variables_initializer()
+#saving the model 
+save_file = './train_model.ckpt'
+saver = tf.train.Saver()
+
 
 # Launch the graph
 with tf.Session() as sess:
@@ -127,4 +131,7 @@ with tf.Session() as sess:
     print('Testing Accuracy: {}'.format(test_acc))
 
 
-    
+    # Save the model
+    saver.save(sess, save_file)
+    print('Trained Model Saved.')
+
