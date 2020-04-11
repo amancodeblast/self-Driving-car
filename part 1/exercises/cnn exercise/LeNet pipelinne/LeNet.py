@@ -86,7 +86,11 @@ optimizer = tf.train.GradientDescentOptimizer(learning_rate=learning_rate)\
 # Accuracy
 correct_pred = tf.equal(tf.argmax(logits, 1), tf.argmax(y, 1))
 accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
-
+#remember argmax return the index of the biggest integer in the axis you chose
+#and it will make a list of all these outputs 
+# tf. equal the truth value of (x == y) element-wise.
+#tf.reduce Computes the mean of elements across dimensions of a tensor.
+#Casts a tensor to a new type.
 # Initializing the variables
 init = tf. global_variables_initializer()
 #saving the model 
