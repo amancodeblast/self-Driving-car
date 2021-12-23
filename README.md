@@ -2,6 +2,7 @@
 
 In this repository I will share the **source code** of all the projects of **[Udacity Self-Driving Car Engineer Nanodegree](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013)**.
 ## Capstone Project
+- [**Traffic light classifier:**](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/readme/Trafficlight.md) Simple traffic light classifier to be integrated in the capstone project.
 The car drives on itself following the basic rules of driving, detecting traffic light and classifying it. It makes decision on its based on the behavious programmed. In our case it is following the traffic rules.
 <img src="https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/udacity_gif.gif?raw=true" width="500">
 
@@ -43,7 +44,7 @@ The car drives on itself following the basic rules of driving, detecting traffic
   </tr>
   <tr>
             <th><p align="center">
-           <a href="https://youtu.be/9XGOQwZA3ww"><img src="./assets/images/PID_Tuned.gif
+           <a href="https://youtu.be/9XGOQwZA3ww"><img src="https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/PID_Tuned.gif
            alt="Overview" width="60%" height="60%"></a>
            <br>P9: PID Controller
            <br><a href="./assets/readme/PID_Control.md" name="p9_code">(code)</a>
@@ -61,8 +62,8 @@ The car drives on itself following the basic rules of driving, detecting traffic
 
 ### Capstone
 
-- [**Traffic light classifier:**](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/readme/Trafficlight.md) Simple traffic light classifier to be integrated in the capstone project.
-  ![simulator_dataset](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/simulator_examples.png)
+
+
 
 ---
 
