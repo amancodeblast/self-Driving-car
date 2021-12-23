@@ -35,7 +35,7 @@ The car drives on itself following the basic rules of driving, detecting traffic
         </p>
     </th>
             <th><p align="center">
-     <a href="https://youtu.be/LQjbtzQ9kBY"><img src="./assets/images/Traffic_light.gif"
+     <a href="https://youtu.be/LQjbtzQ9kBY"><img src="./assets/images/particle_filter.gif"
       alt="Overview" width="60%" height="60%"></a>
            <br>P4: Kidnapped Vehicle
            <br><a href="./assets/readme/ParticleFilter.md" name="p8_code">(code)</a>
