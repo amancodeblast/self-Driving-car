@@ -14,14 +14,14 @@ The car drives on itself following the basic rules of driving, detecting traffic
   <tr>
             <th><p align="center">
            <a href="https://youtu.be/MspewuQH75U"><img src="./assets/images/Traffic_light.gif" alt="Overview" width="60%" height="60%"></a>
-           <br>P2: Traffic Signs
+           <br>P1: Traffic Signs
            <br><a href="./assets/readme/Trafficlight.md" name="p2_code">(code)</a>
         </p>
     </th>
             <th><p align="center">
            <a href="https://youtu.be/rbFJtXh2-G0"><img src="./assets/images/Lane_detection.gif"
            alt="Overview" width="60%" height="60%"></a>
-           <br>P4: Adv. Lane Finding
+           <br>P2: Adv. Lane Finding
            <br><a href="./assets/readme/LaneDetection.md" name="p4_code">(code)</a>
         </p>
     </th>
@@ -30,14 +30,14 @@ The car drives on itself following the basic rules of driving, detecting traffic
             <th><p align="center">
            <a href="https://youtu.be/TmfqCB15n90"><img src="./assets/images/kalman.gif"
            alt="Overview" width="60%" height="60%"></a>
-           <br>P6: Ext. Kalman Filter
+           <br>P3: Ext. Kalman Filter
            <br><a href="./assets/readme/KalmanFilter.md" name="p6_code">(code)</a>
         </p>
     </th>
             <th><p align="center">
      <a href="https://youtu.be/LQjbtzQ9kBY"><img src="./assets/images/Traffic_light.gif"
       alt="Overview" width="60%" height="60%"></a>
-           <br>P8: Kidnapped Vehicle
+           <br>P4: Kidnapped Vehicle
            <br><a href="./assets/readme/ParticleFilter.md" name="p8_code">(code)</a>
         </p>
     </th>
@@ -46,23 +46,19 @@ The car drives on itself following the basic rules of driving, detecting traffic
             <th><p align="center">
       <a href="https://youtu.be/9XGOQwZA3ww"><img src="./assets/images/PID_Tuned.gif"
            alt="Overview" width="60%" height="60%"></a>
-           <br>P9: PID Controller
+           <br>P5: PID Controller
            <br><a href="./assets/readme/PID_Control.md" name="p9_code">(code)</a>
         </p>
     </th>
             <th><p align="center">
            <a href="https://youtu.be/dmCbIT4eON4"><img src="./assets/images/Planning.gif"
            alt="Overview" width="60%" height="60%"></a>
-           <br>P11: Path Planning
+           <br>P6: Path Planning
            <br><a href="./assets/readme/Path_planning.md" name="p11_code">(code)</a>
         </p>
     </th>
   </tr>
 </table>
-
-### Capstone
-
-
 
 
 ---
