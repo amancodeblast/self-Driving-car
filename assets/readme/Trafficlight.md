@@ -6,7 +6,7 @@ In this project, knowledge of computer vision techniques is used to build a clas
 
 <img src="https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/Traffic_light.gif?raw=true" width="500">
 
-![](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/images/all_lights.png "Traffic Lights")
+![](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/all_lights.png "Traffic Lights")
 
 In the notebook, it pre-processes these images and extracts features that will help us distinguish the different types of images, and use those features to classify the traffic light images into three classes: red, yellow, or green.
 
@@ -41,8 +41,8 @@ Then, __get_misclassified_images()__ is used to generate the list of the misclas
 
 # Successful Results 
 
-![](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/images/Traffic_light_detection.png "Traffic Lights Detection Output")
+![](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/Traffic_light_detection.png "Traffic Lights Detection Output")
 
-![](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/images/Traffic_light_simulator.png)
+![](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/Traffic_light_simulator.png)
 
 ![Video Link](https://youtu.be/MspewuQH75U)
