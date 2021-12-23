@@ -1,6 +1,6 @@
 # Localization using Particle Filter for a Kidnaped Vehicle.
 
-<img src="https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/particle_filter.gif?raw=true" width="500">
+<img src="https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/particle_filter.gif?raw=true" width="500">
 
 # Overview
 Implementing a particle filter to solve the localization challenge proposed by UDACITY:

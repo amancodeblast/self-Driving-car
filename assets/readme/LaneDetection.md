@@ -1,6 +1,6 @@
 # Advanced Lane Detection for Self-Driving Cars
 
-[![Video White](https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/Lane_detection.gif?raw=true)](https://youtu.be/rbFJtXh2-G0)  
+[![Video White](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/Lane_detection.gif?raw=true)](https://youtu.be/rbFJtXh2-G0)  
 
 > ***Click the GIF above for link to YouTube video of the result***
 
@@ -30,38 +30,38 @@
 
 [//]: # "Image/Video/Code File References"
 
-[image1]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_images/undistort_output.png "Undistorted"
-[image1b]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_images/undistort_road_output.png "Undistorted"
-[image2b]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_images/cropped_road.png "Cropped"
-[image2c]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_images/combined_thresholding.png "Thresholding"
-[image2d]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_images/birdseyeview.png "Bird's Eye View"
-[image2e]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_images/sliding_window.png "Sliding Window Search"
-[polynomial]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_images/polynomial.png "Polynomial"
-[FitPoly]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_images/color_fit_lines.jpg "Fit Polynomial"
-[input_img]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/test_images/test3.jpg "Input Image"
-[image3]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/examples/binary_combo_example.jpg "Binary Example"
-[image4]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/warped_straight_lines.jpg "Warp Example"
-[image5]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/color_fit_lines.jpg "Fit Visual"
-[image6]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/examples/example_output.jpg "Output"
+[image1]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_images/undistort_output.png "Undistorted"
+[image1b]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_images/undistort_road_output.png "Undistorted"
+[image2b]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_images/cropped_road.png "Cropped"
+[image2c]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_images/combined_thresholding.png "Thresholding"
+[image2d]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_images/birdseyeview.png "Bird's Eye View"
+[image2e]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_images/sliding_window.png "Sliding Window Search"
+[polynomial]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_images/polynomial.png "Polynomial"
+[FitPoly]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_images/color_fit_lines.jpg "Fit Polynomial"
+[input_img]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/test_images/test3.jpg "Input Image"
+[image3]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/examples/binary_combo_example.jpg "Binary Example"
+[image4]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/warped_straight_lines.jpg "Warp Example"
+[image5]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/color_fit_lines.jpg "Fit Visual"
+[image6]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/examples/example_output.jpg "Output"
 
-[video_in]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/project_video.mp4 "Video"
-[video_out]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_videos/video_out_track1.mp4 "Track 1 Video"
+[video_in]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/project_video.mp4 "Video"
+[video_out]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_videos/video_out_track1.mp4 "Track 1 Video"
 
-[gif_track1]:   https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_videos/gif_out_track1.gif "Track 1 GIF"
+[gif_track1]:   https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_videos/gif_out_track1.gif "Track 1 GIF"
 
-[calib1]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/test_images/calibration1.jpg "Chessboard"
-[calib_chesss]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_images/undist_img_calibration1.png "Calibration Chessboard"
-[01_calib_road]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_images/01_undist_img.png "Calibration Road"
-[02_cropped]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_images/02_cropped.png "Cropped Road"
-[03_sobel_thresh]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_images/03_combined_gradient_img.png "Sobel Threshold"
-[04_hls_thresh]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/04_combined_hls_img.png "HLS Threshold"
-[05_combined_thresh]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_images/05_combined_thresh_result_img.png "Combined Threshold"
-[07_warped]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_images/07_warped_img.png "Warped Thresholded"
-[08_sliding_window]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_images/08_searching_img.png "Sliding Window"
-[10_lane_illustration]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_images/10_w_color_result_img.png "Lane Illustration"
-[11_lane_rewarped]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/output_images/11_color_result.png "Original Perspective"
-[13_result]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/final_result.png "Result"
-[gui_demo]: https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/gui_tool_demo/ezgif_com-video-to-gif.gif "Parameter Tuner GUI Tool"
+[calib1]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/test_images/calibration1.jpg "Chessboard"
+[calib_chesss]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_images/undist_img_calibration1.png "Calibration Chessboard"
+[01_calib_road]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_images/01_undist_img.png "Calibration Road"
+[02_cropped]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_images/02_cropped.png "Cropped Road"
+[03_sobel_thresh]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_images/03_combined_gradient_img.png "Sobel Threshold"
+[04_hls_thresh]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/04_combined_hls_img.png "HLS Threshold"
+[05_combined_thresh]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_images/05_combined_thresh_result_img.png "Combined Threshold"
+[07_warped]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_images/07_warped_img.png "Warped Thresholded"
+[08_sliding_window]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_images/08_searching_img.png "Sliding Window"
+[10_lane_illustration]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_images/10_w_color_result_img.png "Lane Illustration"
+[11_lane_rewarped]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/output_images/11_color_result.png "Original Perspective"
+[13_result]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/final_result.png "Result"
+[gui_demo]: https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/gui_tool_demo/ezgif_com-video-to-gif.gif "Parameter Tuner GUI Tool"
 
 ### Implementation Details:
 
@@ -75,7 +75,7 @@
 ### Pipeline 
 
 <p align="center">
-    <img src="https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/pipeline.png" alt="Pipeline" /><br>
+    <img src="https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/pipeline.png" alt="Pipeline" /><br>
     <b>[Pipeline for detecting Lanes]</b><br>
 </p>
 

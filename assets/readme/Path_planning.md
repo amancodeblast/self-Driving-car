@@ -3,7 +3,7 @@
 # CarND-Path-Planning-Project-P1
 Udacity Self-Driving Car Nanodegree - Path Planning Project
 
-<img src="https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/Planning.gif?raw=true" width="500">
+<img src="https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/Planning.gif?raw=true" width="500">
 
 # Overview
 
@@ -62,7 +62,7 @@ Listening to port 4567
 
 Now the path planner is running and listening on port 4567 for messages from the simulator. Next step is to open Udacity's simulator:
 
-![Simulator first screen](https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/simulator.png)
+![Simulator first screen](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/simulator.png)
 
 Click the "Select" button and hope for the best on the highway... well... no really... we are not catching, aren't we?
 At the beginning I did, but now it works!
@@ -80,9 +80,9 @@ No changes were made in the cmake configuration. A new file was added [src/splin
 ### The car is able to drive at least 4.32 miles without incident.
 I ran the simulator for 15 and 20 miles without incidents:
 
-![15 miles](https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/15_miles.png)
+![15 miles](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/15_miles.png)
 
-![20 miles](https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/20_miles.png)
+![20 miles](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/20_miles.png)
 
 ### The car drives according to the speed limit.
 No speed limit red message was seen.

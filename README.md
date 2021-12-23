@@ -61,8 +61,8 @@ In this repository I will share the **source code** of all the projects of **[Ud
 
 ### Capstone
 
-- [**Traffic light classifier:**](https://github.com/amancodeblast/self-Driving-car/tree/master/assets/readme/Trafficlight.md) Simple traffic light classifier to be integrated in the capstone project.
-  ![simulator_dataset](https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/simulator_examples.png)
+- [**Traffic light classifier:**](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/readme/Trafficlight.md) Simple traffic light classifier to be integrated in the capstone project.
+  ![simulator_dataset](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/simulator_examples.png)
 
 ---
 

@@ -1,8 +1,8 @@
 # Extended Kalman Filter For Ego vehicle Localization
 
-<img src="https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/kalman.gif?raw=true" width="500">
+<img src="https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/kalman.gif?raw=true" width="500">
 
-![](https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/ekf_intro.png)
+![](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/ekf_intro.png)
 
 ## What is a Kalman Filter and Why do we need it?
 
@@ -28,9 +28,9 @@ Phew! How about an example?
 
 These are the two sets of sensor measurements (in yellow), and associated ground truth (in blue) given for the project, along with my Kalman Filter estimate (in green):
 
-![](https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/ekf-output-1.png)
+![](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/ekf-output-1.png)
 
-![](https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/ekf-output-2.png)
+![](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/ekf-output-2.png)
 
 
 
@@ -148,7 +148,7 @@ As you can see, the simulator connect to it right away.
 
 The following is an image of the simulator:
 
-![Simulator without data](https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/simulator_without_running.png)
+![Simulator without data](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/simulator_without_running.png)
 
 The simulator provides two datasets. The difference between them are:
 
@@ -157,11 +157,11 @@ The simulator provides two datasets. The difference between them are:
 
 Here is the simulator final state after running the EKL with dataset 1:
 
-![Simulator with dataset 1](https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/simulator_dataset1.png)
+![Simulator with dataset 1](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/simulator_dataset1.png)
 
 Here is the simulator final state after running the EKL with dataset 2:
 
-![Simulator with dataset 1](https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/simulator_dataset2.png)
+![Simulator with dataset 1](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/simulator_dataset2.png)
 
 # [Rubric](https://review.udacity.com/#!/rubrics/748/view) points
 
@@ -169,7 +169,7 @@ Here is the simulator final state after running the EKL with dataset 2:
 
 ### Your code should compile
 
-The code compiles without errors. I did change the [CMackeLists.txt](https://github.com/amancodeblast/self-Driving-car/tree/master/assets/images/CMakeLists.txt) to add the creation of the `./Tests`. I don't think this will create incompatibilities with other platforms, but I only test it on Mac OS.
+The code compiles without errors. I did change the [CMackeLists.txt](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/CMakeLists.txt) to add the creation of the `./Tests`. I don't think this will create incompatibilities with other platforms, but I only test it on Mac OS.
 
 ## Accuracy
 
