@@ -45,4 +45,4 @@ Then, __get_misclassified_images()__ is used to generate the list of the misclas
 
 ![](https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/Traffic_light_simulator.png)
 
-![Video Link](https://youtu.be/MspewuQH75U)
+[Video Link](https://youtu.be/MspewuQH75U)

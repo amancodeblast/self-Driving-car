@@ -1,6 +1,9 @@
 # self-driving-car
 
 In this repository I will share the **source code** of all the projects of **[Udacity Self-Driving Car Engineer Nanodegree](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013)**.
+## Capstone Project
+The car drives on itself following the basic rules of driving, detecting traffic light and classifying it. It makes decision on its based on the behavious programmed. In our case it is following the traffic rules.
+<img src="https://github.com/amancodeblast/self-Driving-car/blob/master/assets/images/udacity_gif.gif?raw=true" width="500">
 
 ## Overview
 
@@ -14,46 +17,42 @@ In this repository I will share the **source code** of all the projects of **[Ud
            <br><a href="./assets/readme/Trafficlight.md" name="p2_code">(code)</a>
         </p>
     </th>
-
-
-        <th><p align="center">
-           <a href="https://youtu.be/rbFJtXh2-G0"><img src="./assets/images/Lane_detection.gif"                         alt="Overview" width="60%" height="60%"></a>
+            <th><p align="center">
+           <a href="https://youtu.be/rbFJtXh2-G0"><img src="./assets/images/Lane_detection.gif"
+           alt="Overview" width="60%" height="60%"></a>
            <br>P4: Adv. Lane Finding
-           <br><a href="./assets/readme/Trafficlight.md" name="p4_code">(code)</a>
+           <br><a href="./assets/readme/LaneDetection.md" name="p4_code">(code)</a>
         </p>
     </th>
-
   </tr>
   <tr>
-
-        <th><p align="center">
-           <a href="https://youtu.be/TmfqCB15n90"><img src="./assets/images/kalman.gif"                         alt="Overview" width="60%" height="60%"></a>
+            <th><p align="center">
+           <a href="https://youtu.be/TmfqCB15n90"><img src="./assets/images/kalman.gif"
+           alt="Overview" width="60%" height="60%"></a>
            <br>P6: Ext. Kalman Filter
-           <br><a href="./assets/readme/Trafficlight.md" name="p6_code">(code)</a>
+           <br><a href="./assets/readme/KalmanFilter.md" name="p6_code">(code)</a>
         </p>
     </th>
-    
-    <th><p align="center">
-     <a href="https://youtu.be/LQjbtzQ9kBY"><img src="./assets/images/Traffic_light.gif"                  
+            <th><p align="center">
+     <a href="https://youtu.be/LQjbtzQ9kBY"><img src="./assets/images/Traffic_light.gif"
       alt="Overview" width="60%" height="60%"></a>
            <br>P8: Kidnapped Vehicle
-           <br><a href="./assets/readme/Trafficlight.md" name="p8_code">(code)</a>
+           <br><a href="./assets/readme/ParticleFilter.md" name="p8_code">(code)</a>
         </p>
     </th>
-
   </tr>
   <tr>
-    <th><p align="center">
+            <th><p align="center">
            <a href="https://youtu.be/zfI0fGNiUyQ"><img src="./assets/images/control_pid.gif alt="Overview" width="60%" height="60%"></a>
            <br>P9: PID Controller
-           <br><a href="./assets/readme/Trafficlight.md" name="p9_code">(code)</a>
+           <br><a href="./assets/readme/PID_Control.md" name="p9_code">(code)</a>
         </p>
     </th>
-
-   <th><p align="center">
-           <a href="https://youtu.be/dmCbIT4eON4"><img src="./assets/images/Planning.gif"                         alt="Overview" width="60%" height="60%"></a>
+            <th><p align="center">
+           <a href="https://youtu.be/dmCbIT4eON4"><img src="./assets/images/Planning.gif"
+           alt="Overview" width="60%" height="60%"></a>
            <br>P11: Path Planning
-           <br><a href="./assets/readme/Trafficlight.md" name="p11_code">(code)</a>
+           <br><a href="./assets/readme/Path_planning.md" name="p11_code">(code)</a>
         </p>
     </th>
   </tr>
@@ -102,7 +101,6 @@ In this repository I will share the **source code** of all the projects of **[Ud
  - **Summary:** Implement a PID controller for keeping the car on track by appropriately adjusting the steering angle.
  - **Keywords:** C++, PID Controller
 
-- 
 
 #### [P6 - Path Planning](./assets/readme/Path_planning.md)
 
