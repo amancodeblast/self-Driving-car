@@ -43,7 +43,8 @@ The car drives on itself following the basic rules of driving, detecting traffic
   </tr>
   <tr>
             <th><p align="center">
-           <a href="https://youtu.be/zfI0fGNiUyQ"><img src="./assets/images/control_pid.gif alt="Overview" width="60%" height="60%"></a>
+           <a href="https://youtu.be/9XGOQwZA3ww"><img src="./assets/images/PID_Tuned.gif
+           alt="Overview" width="60%" height="60%"></a>
            <br>P9: PID Controller
            <br><a href="./assets/readme/PID_Control.md" name="p9_code">(code)</a>
         </p>
